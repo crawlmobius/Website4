@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NZ Painting In Press</title>
+
+
+<script src="scripts.js"></script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<script>
+
+//Jquery function for slide-out menus (submenus appear on hover over menu)
+var timeout    = 500;
+var closetimer = 0;
+var ddmenuitem = 0;
+
+function jqsm_open()
+{  jqsm_canceltimer();
+   jqsm_close();
+   ddmenuitem = $(this).find('ul').css('visibility', 'visible');}
+
+function jqsm_close()
+{  if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
+
+function jqsm_timer()
+{  closetimer = window.setTimeout(jqsm_close, timeout);}
+
+function jqsm_canceltimer()
+{  if(closetimer)
+   {  window.clearTimeout(closetimer);
+      closetimer = null;}}
+
+$(document).ready(function()
+{  $('#jqsm > li').bind('mouseover', jqsm_open)
+   $('#jqsm > li').bind('mouseout',  jqsm_timer)});
+
+document.onclick = jqsm_close;
+</script>
+
+</head>
+
+
+<body onLoad="auto()">
+
+
+
+
+<div id="header">
+
+<div id="heading">
+<a href="index.html" target="_self">NZ Painting</a>
+</div>
+<div id="subheading">
+<a href="index.html" target="_self">...since 1904</a>
+</div>
+
+<div id="navigation">
+<ul id="jqsm" >
+
+<li><a href="category.html" target="_self">Category</a>
+<ul>
+<li><a href="#" target="_self">Abstract</a></li>
+<li><a href="#" target="_self">Christmas</a></li>
+<li><a href="#" target="_self">Landscape</a></li>
+<li><a href="#" target="_self">Pop Art</a></li>
+<li><a href="#" target="_self">Portrait</a></li>
+<li><a href="#" target="_self">Quote and Text</a></li>
+<li><a href="#" target="_self">Sculpture</a></li>
+<li><a href="#" target="_self">Split Canvas</a></li>
+<li><a href="#" target="_self">Sticker</a></li>
+<li><a href="#" target="_self">Still Life</a></li>
+</ul>
+</li>
+
+<li><a href="medium.html" target="_self">Medium</a>
+<ul>
+<li><a href="#" target="_self">Oil</a></li>
+<li><a href="#" target="_self">Acrylic</a></li>
+<li><a href="#" target="_self">Watercolor</a></li>
+<li><a href="#" target="_self">Photo</a></li>
+<li><a href="#" target="_self">Print</a></li>
+<li><a href="#" target="_self">Digital</a></li>
+<li><a href="#" target="_self">Sketch</a></li>
+<li><a href="#" target="_self">Mixed Media</a></li>
+</ul>
+</li>
+
+<li><a href="price.html" target="_self">Price</a>
+<ul>
+<li><a href="#" target="_self">Under $100</a></li>
+<li><a href="#" target="_self">$100-$500</a></li>
+<li><a href="#" target="_self">$500-$1000</a></li>
+<li><a href="#" target="_self">$1000-$2000</a></li>
+<li><a href="#" target="_self">Above $2000</a></li>
+</ul>
+</li>
+
+<li><a href="about_us.html" target="_self">About Us</a></li>
+<li><a href="contact.html" target="_self">Contact</a></li>
+
+
+</ul>
+</div>
+
+ </div>
+ 
+<div id="container">
+
+
+
+<div id="sidebar">
+  <a href="http://www.nzherald.co.nz/visual-arts/news/article.cfm?c_id=355&objectid=11646634" target="new"><img src="images/in_press.jpg"  alt="New Zealand Herald"/></a> </div>
+
+
+<div id="section">
+<p>Vivid Sydney is an art and ideas experience that takes over the city for 23 days, showcasing 80 light-inspired art installations as well as music events and idea conferences. It is the world's largest annual festival of this kind and this year, eight New Zealand artists are to make their mark. New Zealand based company "NZ Painting" is sponsoring the attendance of these artists. </p>
+
+<p>"It is a great acknowledgement to be selected in Vivid," says Auckland-based artist, Angus Muir. "To be on the stage with world-leading lighting designers is always a privilege, which would not happen without support of NZ Painting, very old well established New Zealand company."</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="sidebar1">
+  <a href="http://www.nytimes.com/2013/05/26/travel/36-hours-in-auckland-new-zealand.html?_r=0" target="new"><img src="images/in_press01.jpg" alt="New York Times"/> </a></div>
+
+<div id="section1">
+<p>Admittedly, few fly all the way to New Zealand just to visit Auckland, the country's largest city. Most aim to explore the otherworldly landscapes with which, thanks to the silver screen, this remote nation has become associated. But before delving into the cinematic beauty of the North Island countryside, discover the San Francisco-steep streets and regenerated neighborhoods of newly vibrant Auckland. This multicultural city, home to a third of all Kiwis, has recently welcomed a raft of bars, boutiques and restaurants that highlight locally made products, from excellent craft beer and wine to fashion and art. And none of it has anything to do with orcs or rings.</p>
+<p>NZ Painting was the main host who welcomed us in Auckland and showed us the beauty of New Zealand art</p>
+</div>
+
+<div id="footer">
+
+<div id="footer_menu">
+<h4>Menu:  </h4>
+<a href="index.html" target="_self">Home</a><br>
+ <a href="about_us.html" target="_self">About Us</a><br>
+ <a href="in_press.html" target="_self">In Press</a><br>
+ <a href="terms.html" target="_self">Terms</a><br>
+ <a href="contact.html" target="_self">Contact </a><br>
+ </div>
+
+
+<div id="social_media">
+<h4>Find Us on:</h4><br><br>
+<div class="icons">
+    <a class="twitter" href="https://twitter.com/" target="new"></a>
+    <a class="pinterest" href="https://nz.pinterest.com/" target="new"></a>
+    <a class="flickr" href="https://www.flickr.com/" target="new"></a>
+    <a class="facebook" href="https://www.facebook.com/" target="new"></a>
+    <a class="sharethis" href="http://www.sharethis.com/" target="new"></a>
+    <a class="youtube" href="https://www.youtube.com/?gl=NZ" target="new"></a>
+    <a class="googleplus" href="https://plus.google.com/collections/featured" target="new"></a>
+    </div>
+</div>
+
+
+<div id="search">
+<h4>Looking for something can't find?  </h4><br><br>
+<form method="get" action="http://www.google.com/search" target="new">
+<input type="text" name="q" size="31" maxlength="200" value="" /><br> <br>
+<input type="submit" value="Google Search" />
+
+</form>
+</div>
+
+<div id="copyright">
+<h2>&copy; Copyright and Disclaimer</h2>
+<p>&copy; 2016 All pictures are copyright free and labeled as for reuse with modification. All text are copyright. </p>
+
+</div>
+
+</div>
+</div>
+</body>
+</html>
